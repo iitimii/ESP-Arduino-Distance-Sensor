@@ -17,7 +17,7 @@ To get started, gather the following components:
 8. Female-to-male jumper wires
 9. Box (for housing)
 10. Vero board
-
+11. Battery
 Procedure:
 
 1. Connect the Sharp GP2Y0A21YK0F Analog Distance Sensor:
