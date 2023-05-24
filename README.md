@@ -21,7 +21,7 @@ To get started, gather the following components:
 Procedure:
 
 1. Connect the Sharp GP2Y0A21YK0F Analog Distance Sensor:
-Begin by connecting the Sharp sensor to the ESP32 board. Ensure the appropriate voltage and ground connections are made, and connect the sensor's output pin to an analog input pin (pin A0) on the Arduino.
+Begin by connecting the Sharp sensor to the Arduino board. Ensure the appropriate voltage and ground connections are made, and connect the sensor's output pin to an analog input pin (pin A0) on the Arduino.
 
 2. Setup the Button and LCD with ESP32:
 Connect the one end of push button switch to ground and the other to pin 15 on the ESP32, this makes the switch a pull up swicth. Solder the LCD to the IIC interface, making the necessary connections for power and data. Connect the LED 16x2 module (now soldered to the IIC) to the ESP32 board. Use the appropriate digital pins for button input and LED output.
@@ -30,6 +30,8 @@ https://randomnerdtutorials.com/esp32-esp8266-i2c-lcd-arduino-ide/
 
 3. Code Implementation:
 Write the ESP32 code to send a request to the Arduino board when the button is pressed. Implement the appropriate code to establish communication between the ESP32 and Arduino using serial communication (the code is already written in esp_part.ino). Upon receiving the request, the Arduino should read the distance data from the Sharp sensor and send it back to the ESP32 (arduino_part.ino).
+
+The positive of the battery should be connected to the Vin pins on both boards, the ground of the battery should be connected to the a ground pin on each boards
 
 4. Display Distance Data on LCD:
 Utilize the LCD library to display the received distance data on the connected screen. Initialize the LCD and implement a function to update and refresh the display with the current distance readings received from the Arduino.
