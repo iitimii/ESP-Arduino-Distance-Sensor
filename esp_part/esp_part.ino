@@ -27,7 +27,7 @@ int post = 0;
 void setup(){
   //Initialize serial
   Serial.begin(115200);
-  Serial2.begin(115200, SERIAL_8N1, RXp2, TXp2);
+  Serial2.begin(115200, SERIAL_8N1, RXp2, TXp2); //Talk to the Sharp Sensor
 
   lcd.init();
   lcd.backlight();
@@ -162,7 +162,7 @@ void loop(){
   lcd.setCursor(0, 1);
   lcd.print("Retrying...");
 
-  int x = ThingSpeak.writeField(ChannelNumber, 1, distance, WriteAPIKey);
+  int x = ThingSpeak.writeField(ChannelNumber, 1, distance, WriteAPIKey); //Get response code from the request to Thingsspeak
   
   if(x == 200){
   lcd.clear();
