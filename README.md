@@ -47,3 +47,6 @@ Upload the updated code to the ESP32 and Arduino UNO boards  and ensure that all
 
 Conclusion:
 Congratulations! You have successfully implemented a system that retrieves distance data from a Sharp GP2Y0A21YK0F Analog Distance Sensor using an Arduino board and communicates with an ESP32 which obtains the data upon request. The data is then displayed on an LCD screen and uploaded to ThingSpeak, allowing for remote monitoring and analysis. This project offers exciting possibilities for various applications.
+
+
+![image](https://github.com/iitimii/ESP-Arduino-Distance-Sensor/assets/106264110/72524bcc-e5b1-4a1b-9238-c45f4576898a)
